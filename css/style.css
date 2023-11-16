@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 1rem;
+}
+
+::-webkit-scrollbar-track {
+    background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #2c0058;
+    border-radius: 1rem;
+}
+
+body {
+    background: #ECE9E6 !important;
+    background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6) !important;
+    background: linear-gradient(to right, #FFFFFF, #ECE9E6) !important;
+}
+
+.backToMenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background: #dcb9ff;
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+.backToMenu:hover {
+    background: #a347ff;
+}
+
+.backToMenu i {
+    color: #fefefe;
+}
+
+/* HEADER */
+
+.main .navbar {
+    display: flex;
+    align-items: center;
+}
+
+.main a.nav-link {
+    color: #a347ff;
+    font-size: 1.2rem;
+    font-weight: 400;
+    transition: .3s ease;
+    display: flex;
+    align-items: center;
+}
+
+.main a.nav-link:hover {
+    color: #7e43b9;
+}
+
+.main a.nav-link i {
+    margin-right: .5rem!important;
+}
+
+.main a.navbar-brand {
+    color: #707070;
+    font-size: 3rem;
+    font-weight: 400;
+    font-style: italic;
+    font-family: 'Exo 2', sans-serif;
+}
+
+.main .text-bg-light {
+    color: #fefefe !important;
+    background: #53198d !important;
+}
+
+.main a.text-bg-light:hover {
+    background: #404040;
+}
+
+/* BANNER */
+
+.main {
+    height: 70vh;
+    background-image: url('/imgs/bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.contentBanner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contentBanner h1 {
+    color: #ffffff;
+    font-size: 4rem;
+    font-weight: 500;
+    line-height: 4rem;
+    padding-bottom: 1rem;
+}
+
+.contentBanner p {
+    color: #dfdfdf;
+    font-size: 1.6rem;
+    flex: 1;
+}
+
+.contentBanner .btn-purple {
+    color: #fefefe !important;
+    background: #53198d !important;
+    transition: .3s ease;
+    display: flex;
+    align-items: center;
+}
+
+.contentBanner .btn-purple:hover {
+    background: #3d1268 !important;
+}
+
+.main .btn-purple i {
+    margin-left: .5rem!important;
+}
+
+.contentBanner .ferrari {
+    width: 40rem;
+    height: auto;
+    visibility: hidden;
+}
+
+/* CARS */
+
+.mainCars {
+    height: 100vh;
+}
+
+.mainCars .mainCarsTitle {
+    color: #808080;
+    font-size: 1.8rem;
+    font-style: italic;
+    border: .1rem solid #d3d3d3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainCars .mainCarsTitle i {
+    margin-left: .5rem;
+}
+
+.mainCars .card h5 {
+    font-weight: 600;
+    border-bottom: 1px solid #ECE9E6;
+    padding-bottom: .5rem;
+}
+
+.mainCars .card {
+    margin-bottom: 2rem;
+}
+
+.mainCars .img-fluid {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.mainCars .card-body a {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainCars .card-body i {
+    margin-left: .5rem;
+}
+
+.mainCars .showMore {
+    color: #c4c4c4;
+    font-size: 1.4rem;
+    font-style: italic;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+.mainCars .showMore i {
+    margin-left: .5rem;
+}
+
+.mainCars .showMore:hover {
+    background: rgba(255,255,255,.8);
+    border: 1px solid #d4d4d4;
+}
+
+/* ABOUT */
+
+.mainAbout .mainAboutTitle {
+    color: #6830a0;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.mainAbout p {
+    color: #808080;
+    font-size: 1.4rem;
+    font-style: italic;
+    background: rgba(0,0,0,.05);
+    border-radius: .5rem;
+    padding: 1rem .5rem;
+}
+
+.mainAbout .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainAbout .btn i{
+    margin-left: .5rem;
+}
+
+/* FOOTER */
+
+.footer {
+    border-top: 1px solid #909090;
+    padding-top: 2rem;
+}
+
+.footer p.copy {
+    color: #707070;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.footer p.address {
+    color: #707070;
+}
+
+/* MEDIA QUERY */
+
+@media screen and (max-width: 1024px) {
+    .main a.nav-link {
+        font-size: 1rem;
+        display: none;
+    }
+
+    .contentBanner h1 {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+
+    .contentBanner p {
+        font-size: 1.2rem;
+    }
+    
+    .contentBanner .btn-purple {
+        color: #fefefe !important;
+        background: #53198d !important;
+        transition: .3s ease;
+        display: flex;
+        align-items: center;
+    }
+
+    .mainCars {
+        height: 100vh;
+    }
+    
+    .mainCars .mainCarsTitle {
+        font-size: 1.4rem;
+        margin: 2rem 0;
+    }
+    
+    .mainCars .card h5 {
+        font-weight: 600;
+        border-bottom: 1px solid #ECE9E6;
+        padding-bottom: .5rem;
+    }
+    
+    .mainCars .card {
+        margin-bottom: 2rem;
+    }
+    
+    .mainCars .img-fluid {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+    
+    .mainCars .card-body a {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .mainCars .card-body i {
+        margin-left: .5rem;
+    }
+    
+    .mainCars .showMore {
+        color: #c4c4c4;
+        font-size: 1.4rem;
+        font-style: italic;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: .5s ease;
+    }
+    
+    .mainCars .showMore i {
+        margin-left: .5rem;
+    }
+    
+    .mainCars .showMore:hover {
+        background: rgba(255,255,255,.8);
+        border: 1px solid #d4d4d4;
+    }
+  }
